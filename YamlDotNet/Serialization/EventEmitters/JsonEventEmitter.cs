@@ -89,6 +89,7 @@ namespace YamlDotNet.Serialization.EventEmitters
 
                     case TypeCode.DateTime:
                         eventInfo.RenderedValue = YamlFormatter.FormatDateTime(value);
+                        eventInfo.Style = ScalarStyle.DoubleQuoted;
                         break;
 
                     case TypeCode.Empty:
